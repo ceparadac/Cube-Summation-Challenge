@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'CubeController@index');
+Route::resource('cube', 'CubeController');
+Route::post('/execute', ['as' => 'cube.execute', 'uses' => 'CubeController@execute']);

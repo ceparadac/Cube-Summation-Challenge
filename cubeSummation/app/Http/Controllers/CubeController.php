@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
+use Request;
 
 class CubeController extends Controller
 {
@@ -10,5 +10,12 @@ class CubeController extends Controller
     {
 
         return view('cube.index');
+    }
+
+    public function execute(Request $request)
+    {
+        $output = Request::input('input');
+        return response()->json(['output' => $output]);
+        return json_encode($output);
     }
 }

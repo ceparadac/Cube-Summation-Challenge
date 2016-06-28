@@ -24,7 +24,7 @@
 <div class="container" id="main">
     <h3 class="text-primary text-center">Please, Insert the lines to run the program:</h3>
     <div class="col-md-8 text-center col-md-offset-2">
-        <form role="form">
+        <form action="{{route('cube.execute')}}" method="POST" name="formCreate" id="inputForm" role="form">
             <div class="form-group">
                 <label for="input">Input:</label>
                 {{csrf_field()}}
@@ -32,18 +32,19 @@
                           required></textarea>
             </div>
             <div class="text-center">
-                <button type="button" class="btn btn-primary">Execute!</button>
+                <button type="button" onclick="config();" class="btn btn-primary">Execute!</button>
             </div>
         </form>
         <br><br>
         <div class="form-group">
             <label for="output">Output:</label>
-            <textarea class="form-control" rows="5" cols="10" id="output" name="output" value="" readonly="true"
-                      disabled="true"></textarea>
+            <textarea class="form-control" rows="5" cols="10" id="output" name="output" value=""
+                      readonly="true"></textarea>
         </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/requestManager.js"></script>
 </body>
 </html>
