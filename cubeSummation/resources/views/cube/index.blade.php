@@ -51,7 +51,8 @@
                         <strong>UPDATE 2 2 2 4</strong> makes the cell (2,2,2) = 4<br>
                         <strong>QUERY 1 1 1 3 3 3.</strong> As (2,2,2) is updated to 4 and the rest are all 0. The
                         answer to this query is 4.<br>
-                        <strong>UPDATE 1 1 1 23.</strong> updates the cell (1,1,1) to 23. QUERY 2 2 2 4 4 4. Only the
+                        <strong>UPDATE 1 1 1 23.</strong> updates the cell (1,1,1) to 23. <strong>QUERY 2 2 2 4 4
+                            4.</strong> Only the
                         cell (1,1,1) and (2,2,2) are non-zero and (1,1,1) is not between (2,2,2) and (4,4,4). So, the
                         answer is 4.<br>
                         <strong>QUERY 1 1 1 3 3 3.</strong> 2 cells are non-zero and their sum is 23+4 = 27.<br>
