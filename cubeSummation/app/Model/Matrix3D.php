@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Model;
 /**
  * Created by IntelliJ IDEA.
  * User: Cristian Parada

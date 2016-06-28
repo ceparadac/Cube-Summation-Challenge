@@ -32,7 +32,8 @@
                           required></textarea>
             </div>
             <div class="text-center">
-                <button type="button" onclick="config();" class="btn btn-primary">Execute!</button>
+                <button type="button" onclick="config();" id="execute" name="execute" class="btn btn-primary">Execute!
+                </button>
             </div>
         </form>
         <br><br>
