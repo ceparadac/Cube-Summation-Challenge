@@ -16,6 +16,6 @@ class CubeController extends Controller
     {
         $output = Request::input('input');
         return response()->json(['output' => $output]);
-        return json_encode($output);
+
     }
 }
